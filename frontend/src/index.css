@@ -1,0 +1,11 @@
+/*
+  Global styles, which apply to the whole webapp.
+  This file is imported by src/main.jsx.
+*/
+
+/* System fonts, as used by GitHub */
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
