@@ -1,0 +1,125 @@
+{
+  "entities": {
+    "emergencyContact": {
+      "title": "Emergency Contact",
+      "description": "A saved emergency contact for quick dial and notification in critical situations.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier of the contact."
+        },
+        "name": {
+          "type": "string",
+          "description": "Full name of the contact person."
+        },
+        "relationship": {
+          "type": "string",
+          "description": "Relationship to the user (e.g. Partner, Parent, Doctor, Colleague)."
+        },
+        "phone": {
+          "type": "string",
+          "description": "Emergency telephone number."
+        },
+        "isPrimary": {
+          "type": "boolean",
+          "description": "Whether this is the primary emergency contact."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp when this contact was created."
+        }
+      },
+      "required": ["id", "name", "phone", "createdAt"]
+    },
+    "medicalProfile": {
+      "title": "Medical Profile",
+      "description": "Critical medical ID information for first responders during an emergency.",
+      "type": "object",
+      "properties": {
+        "fullName": {
+          "type": "string",
+          "description": "Full name of the individual."
+        },
+        "bloodType": {
+          "type": "string",
+          "description": "Blood group type (e.g., O+, A-, etc.)."
+        },
+        "allergies": {
+          "type": "string",
+          "description": "Known allergies, especially medications (e.g. Penicillin, Peanuts, Latex)."
+        },
+        "medications": {
+          "type": "string",
+          "description": "Daily or essential life-saving medications."
+        },
+        "medicalConditions": {
+          "type": "string",
+          "description": "Chronic conditions like Asthma, Diabetes, Epilepsy, Cardiac History."
+        },
+        "emergencyNotes": {
+          "type": "string",
+          "description": "Special medical instructions or directives."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp when medical profile was last updated."
+        }
+      },
+      "required": ["fullName", "updatedAt"]
+    },
+    "incidentLog": {
+      "title": "Incident Log",
+      "description": "A recorded first-aid emergency event with observations and actions taken.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique incident ID."
+        },
+        "timestamp": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Time the event occurred."
+        },
+        "title": {
+          "type": "string",
+          "description": "Title or summary of the injury/symptom."
+        },
+        "category": {
+          "type": "string",
+          "description": "Category of the first-aid situation."
+        },
+        "symptoms": {
+          "type": "string",
+          "description": "Recorded symptoms observed."
+        },
+        "actionsTaken": {
+          "type": "string",
+          "description": "First-aid actions performed."
+        },
+        "emergencyCalled": {
+          "type": "boolean",
+          "description": "Whether 111 emergency services were dispatched."
+        }
+      },
+      "required": ["id", "timestamp", "title"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}/emergencyContacts/{contactId}": {
+      "schema": "emergencyContact",
+      "description": "Emergency contacts belonging to an authenticated user."
+    },
+    "/users/{userId}/profile/medical": {
+      "schema": "medicalProfile",
+      "description": "Medical ID profile of an authenticated user."
+    },
+    "/users/{userId}/incidentLogs/{incidentId}": {
+      "schema": "incidentLog",
+      "description": "Logged emergency incidents for the user."
+    }
+  }
+}

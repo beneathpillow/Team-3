@@ -1,0 +1,8 @@
+{
+  "name": "Remix ClaraAid - Minor Injury \u0026 First Aid Guide",
+  "description": "Instant clinical first-aid protocols, interactive pressure \u0026 burn timers, emergency triage, wound healing tracker, and smart triage assistance for minor cuts, burns, sprains, and stings.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

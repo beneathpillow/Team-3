@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  /* Accessibility text-size overrides */
+  html.text-size-normal {
+    font-size: 16px;
+  }
+
+  html.text-size-large {
+    font-size: 18px;
+  }
+  @media (min-width: 640px) {
+    html.text-size-large {
+      font-size: 18.5px;
+    }
+  }
+
+  html.text-size-xlarge {
+    font-size: 20px;
+  }
+  @media (min-width: 640px) {
+    html.text-size-xlarge {
+      font-size: 21px;
+    }
+  }
+
+  html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Hide scrollbar for clean horizontal tab rails */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
