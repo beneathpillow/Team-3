@@ -14,7 +14,7 @@ export default function HomePage() {
         <Card
           to="unsure"
           icon="help"
-          title="I don’t know what happened"
+          title="I am not sure what happened"
           variant="cream"
         />
         <Card

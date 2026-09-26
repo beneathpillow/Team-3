@@ -203,6 +203,8 @@ export default function HealthcareCentersPage() {
       </div>
 
       {/* Decision Guide: Urgent Care vs Emergency Room */}
+      <details className="care-guide">
+        <summary>Not sure where to go?</summary>
       <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs">
         <div className="p-4 sm:p-5 border-b border-slate-100 bg-slate-50/70">
           <h2 className="text-sm font-bold text-slate-900 flex items-center gap-2">
@@ -287,7 +289,7 @@ export default function HealthcareCentersPage() {
           </div>
         </div>
       </div>
-
+      </details>
       {/* Search and Filter Controls */}
       <div className="bg-white rounded-xl border border-slate-200 p-4 space-y-3 shadow-xs">
         <div className="flex flex-col sm:flex-row gap-2.5 items-stretch sm:items-center">

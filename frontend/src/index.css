@@ -12,7 +12,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   --green: #245c48;
-  --red: #a62f39;
+  --red: #ce2a38;
   --muted: #5d6c63;
   --line: #dce3d9;
 }
@@ -1083,7 +1083,7 @@ footer p {
   border-color: #68788a;
 }
 
-/* 医疗机构页面 */
+
 .healthcare-page input {
   background: #fff;
   color: #172b3a;
@@ -1146,4 +1146,76 @@ input:focus-visible {
   outline: 3px solid #164e78;
   outline-offset: 4px;
   box-shadow: 0 0 0 4px #fff;
+}
+
+/* 医疗服务选择指南：整体卡片 */
+.healthcare-page .care-guide {
+  background: #fff;
+  border: 1px solid #68788a;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgb(23 43 58 / 5%);
+}
+
+/* 卡片标题 */
+.healthcare-page .care-guide > div:first-child {
+  padding: 20px 24px;
+  background: #eaf2fa;
+  border-bottom: 1px solid #68788a;
+}
+
+.healthcare-page .care-guide > div:first-child h2 {
+  margin: 0;
+}
+
+/* 两类医疗服务的内容 */
+.healthcare-page .care-guide > div:nth-child(2) {
+  padding: 24px;
+}
+
+.healthcare-page .care-guide h3 {
+  margin-top: 0;
+}
+
+/* 手机端缩小内边距 */
+@media (max-width: 600px) {
+  .healthcare-page .care-guide > div:first-child,
+  .healthcare-page .care-guide > div:nth-child(2) {
+    padding: 20px;
+  }
+}
+.healthcare-page details.care-guide {
+  margin-bottom: 24px;
+}
+
+.healthcare-page .care-guide > summary {
+  padding: 18px 20px;
+  background: #eaf2fa;
+  color: #164e78;
+  font-size: 16px;
+  font-weight: 650;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.healthcare-page .care-guide > summary::marker {
+  color: #164e78;
+}
+
+.healthcare-page .care-guide[open] > summary {
+  border-bottom: 1px solid #68788a;
+}
+
+.healthcare-page .care-guide > summary:focus-visible {
+  outline: 3px solid #164e78;
+  outline-offset: -5px;
+}
+
+/* 覆盖之前按 div 顺序设置的内边距 */
+.healthcare-page details.care-guide > div {
+  padding: 20px;
+}
+
+.healthcare-page details.care-guide > div h2 {
+  margin-top: 0;
 }
