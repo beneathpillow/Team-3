@@ -1,4 +1,4 @@
-# MERN Stack Starter
+# MERN Stack Starter hi
 
 A basic starter project for a webapp with a **MongoDB** database, a **Node.js / Express** backend (using [Mongoose](https://mongoosejs.com/)), and a **React** frontend (built with [Vite](https://vite.dev/)).
 
@@ -64,7 +64,7 @@ You can stop running the webapp by pressing Ctrl+C in the terminal (same shortcu
 
   Then, in a route handler: `const things = await Thing.find();`
 
-### Frontend
+### Frontend 
 
 - [`frontend/src/main.jsx`](./frontend/src/main.jsx) is the entry point of the React app. It displays the [`App`](./frontend/src/App.jsx) component, and imports the global stylesheet [`index.css`](./frontend/src/index.css).
 - [`frontend/src/App.jsx`](./frontend/src/App.jsx) is the root component. Start adding your own components from here. Other components can go in a new `frontend/src/components` folder.
