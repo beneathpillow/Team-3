@@ -9,6 +9,7 @@ import TopicPage from "./pages/TopicPage";
 import AboutPage from "./pages/AboutPage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import HealthcareCentersPage from "./pages/Helpcentre";
 
 export default function App() {
   const [route, setRoute] = useState(
@@ -65,6 +66,7 @@ export default function App() {
         {route === "emergency" && <EmergencyPage />}
         {topic && <TopicPage topic={topic} />}
         {route === "about" && <AboutPage />}
+        {route === "helpcentre" && <HealthcareCentersPage />}
         {!["home", "topics", "unsure", "emergency", "about"].includes(route) &&
           !topic && (
             <p className="below">

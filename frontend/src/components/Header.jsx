@@ -12,6 +12,7 @@ export default function Header() {
       <a className="header-call" href="tel:111">
         <Icon name="phone" size={17} /> Emergency? Call 111
       </a>
+      <a href="#helpcentre">Find healthcare Centre</a>
     </header>
   );
 }

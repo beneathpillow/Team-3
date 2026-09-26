@@ -1,4 +1,5 @@
 import Card from "../components/Card";
+import HealthcareCentersPage from "./Helpcentre";
 
 export default function HomePage() {
   return (
