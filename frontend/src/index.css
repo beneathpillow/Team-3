@@ -727,3 +727,423 @@ footer p {
     padding-left: 44px;
   }
 }
+
+
+.healthcare-page {
+  max-width: 960px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+.healthcare-page > div + div {
+  margin-top: 28px;
+}
+
+.healthcare-page h1 {
+  font-size: 32px;
+  line-height: 1.25;
+  margin: 0 0 16px;
+}
+
+.healthcare-page h2 {
+  font-size: 24px;
+  line-height: 1.4;
+  margin: 24px 0 16px;
+}
+
+.healthcare-page h3 {
+  font-size: 20px;
+  line-height: 1.4;
+  margin: 20px 0 12px;
+}
+
+.healthcare-page p {
+  margin: 12px 0 18px;
+}
+
+
+.healthcare-page ul {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 24px;
+}
+
+.healthcare-page li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.healthcare-page svg {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.healthcare-page li svg {
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+
+.healthcare-page input {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 16px;
+  margin: 8px 0;
+  border: 1px solid #bacabe;
+  border-radius: 10px;
+  font: inherit;
+  background: white;
+  color: #233d35;
+}
+
+.healthcare-page button {
+  min-height: 44px;
+  padding: 10px 16px;
+  margin: 6px 8px 6px 0;
+  border: 1px solid #bacabe;
+  border-radius: 10px;
+  font: inherit;
+  background: #eaf1e6;
+  color: #233d35;
+  cursor: pointer;
+}
+
+.healthcare-page button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.healthcare-page button svg {
+  margin-right: 8px;
+}
+
+@media (max-width: 600px) {
+  .healthcare-page h1 {
+    font-size: 26px;
+  }
+
+  .healthcare-page h2 {
+    font-size: 21px;
+  }
+}
+
+
+.healthcare-page .flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+}
+
+.healthcare-page .flex-col {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+
+.healthcare-page [class~="space-y-3.5"] > div {
+  padding: 28px;
+  margin-bottom: 24px;
+  background: #fff;
+  border: 1px solid #dce3d9;
+  border-radius: 16px;
+}
+
+
+.healthcare-page [class~="space-y-1.5"] > * + * {
+  margin-top: 16px;
+}
+
+.healthcare-page [class~="space-y-1.5"] h3 {
+  margin-bottom: 16px;
+}
+
+
+.healthcare-page [class~="gap-1.5"][class~="pt-1"] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.healthcare-page [class~="gap-1.5"][class~="pt-1"] > span {
+  padding: 6px 12px;
+  background: #eff4ec;
+  border: 1px solid #dce3d9;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+
+.healthcare-page [class~="sm:flex-col"] {
+  gap: 12px;
+  padding-top: 18px;
+  margin-top: 18px;
+  border-top: 1px solid #dce3d9;
+}
+
+.healthcare-page [class~="sm:flex-col"] > a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border: 1px solid #dce3d9;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.healthcare-page a[aria-disabled="true"] {
+  color: #657168;
+  background: #f2f4ef;
+  cursor: not-allowed;
+}
+
+
+.healthcare-page [class~="md:grid-cols-2"] > div + div {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #dce3d9;
+}
+
+@media (max-width: 600px) {
+  .healthcare-page [class~="space-y-3.5"] > div {
+    padding: 20px;
+  }
+}
+
+
+.healthcare-page li.flex,
+.healthcare-page h2.flex {
+  display: grid;
+  grid-template-columns: 20px minmax(0, 1fr);
+  align-items: start;
+  gap: 10px;
+}
+
+.healthcare-page li.flex > svg,
+.healthcare-page h2.flex > svg {
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+}
+
+.healthcare-page li.flex > span {
+  min-width: 0;
+}
+
+
+@media (max-width: 600px) {
+ 
+  .site > header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 16px 12px;
+  }
+
+  .site > header .brand {
+    white-space: nowrap;
+    gap: 8px;
+  }
+
+  .site > header .header-call {
+    white-space: nowrap;
+    font-size: 14px;
+  }
+
+  .site > header a[href="#helpcentre"] {
+    grid-column: 1 / -1;
+    display: block;
+    padding: 10px 14px;
+    border: 1px solid #dce3d9;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .healthcare-page {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .healthcare-page h1 {
+    font-size: 26px;
+    line-height: 1.25;
+    text-wrap: balance;
+  }
+
+  .healthcare-page h2 {
+    font-size: 21px;
+    line-height: 1.35;
+    text-wrap: balance;
+  }
+
+  .healthcare-page h3 {
+    font-size: 19px;
+    line-height: 1.4;
+  }
+
+  .healthcare-page li {
+    margin-bottom: 16px;
+  }
+}
+
+
+/* Accessible colour overrides */
+:root {
+  color: #172b3a;
+  background: #f8fafc;
+
+  /* 保留旧变量名，避免修改现有组件 */
+  --green: #164e78;
+  --red: #982334;
+  --muted: #465568;
+  --line: #68788a;
+}
+
+.choice,
+.topic-card,
+.panel,
+.warning-grid li {
+  border-color: var(--line);
+}
+
+.green {
+  background: #eaf2fa;
+  color: #172b3a;
+}
+
+.cream,
+.caution {
+  background: #faf3d9;
+  color: #172b3a;
+  border-color: #82796a;
+}
+
+.red,
+.danger-panel {
+  background: #fbdadd;
+  color: #8c081b;
+  border-color: #f0072e;
+  border-inline-start-width: 6px;
+}
+
+.red p,
+.danger-panel h2,
+.danger-panel p {
+  color: #af1e33;
+}
+
+.panel p {
+  color: #172b3a;
+}
+
+.icon-box,
+.topic-card .icon-box {
+  background: #eaf2fa;
+  color: #164e78;
+  border-color: #68788a;
+}
+
+.red .icon-box,
+.warning-grid li span {
+  background: #fff0f0;
+  color: #801c2b;
+  border-color: #ea1d3b;
+}
+
+.steps li::before {
+  background: #164e78;
+  color: #fff;
+}
+
+.call {
+  background: #e52340;
+  color: #fff;
+}
+
+.call.health,
+.call.poison {
+  background: #164e78;
+  color: #fff;
+}
+
+.header-call {
+  color: #e52340;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.nz {
+  border-color: #68788a;
+}
+
+/* 医疗机构页面 */
+.healthcare-page input {
+  background: #fff;
+  color: #172b3a;
+  border-color: #68788a;
+}
+
+.healthcare-page input::placeholder {
+  color: #465568;
+  opacity: 1;
+}
+
+.healthcare-page button {
+  background: #eaf2fa;
+  color: #164e78;
+  border-color: #68788a;
+}
+
+.healthcare-page button:hover:not(:disabled) {
+  background: #dce9f5;
+}
+
+.healthcare-page button:disabled {
+  background: #e5e7eb;
+  color: #465568;
+  opacity: 1;
+}
+
+.healthcare-page [class~="space-y-3.5"] > div {
+  background: #fff;
+  border-color: #68788a;
+}
+
+.healthcare-page [class~="gap-1.5"][class~="pt-1"] > span {
+  background: #eaf2fa;
+  color: #172b3a;
+  border-color: #68788a;
+}
+
+.healthcare-page [class~="sm:flex-col"],
+.healthcare-page [class~="sm:flex-col"] > a,
+.healthcare-page [class~="md:grid-cols-2"] > div + div {
+  border-color: #68788a;
+}
+
+.healthcare-page a[aria-disabled="true"] {
+  background: #e5e7eb;
+  color: #465568;
+  border-style: dashed;
+}
+
+.site > header a[href="#helpcentre"] {
+  color: #164e78;
+  border-color: #68788a;
+}
+
+/* 键盘操作时，焦点清晰可见 */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid #164e78;
+  outline-offset: 4px;
+  box-shadow: 0 0 0 4px #fff;
+}

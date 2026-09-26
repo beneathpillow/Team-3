@@ -38,9 +38,11 @@ export default function App() {
             ? "Should I call 111?"
             : route === "about"
               ? "About this project"
-              : topic
-                ? topic.title
-                : "Page not found";
+              : route === "helpcentre"
+                ? "Find healthcare"
+                 : topic
+                  ? topic.title
+                    : "Page not found";
   return (
     <div className="site">
       <a className="skip" href="#content">
@@ -67,6 +69,7 @@ export default function App() {
         {topic && <TopicPage topic={topic} />}
         {route === "about" && <AboutPage />}
         {route === "helpcentre" && <HealthcareCentersPage />}
+        
         {!["home", "topics", "unsure", "emergency", "about"].includes(route) &&
           !topic && (
             <p className="below">

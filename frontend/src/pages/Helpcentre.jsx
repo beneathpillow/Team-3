@@ -168,7 +168,7 @@ export default function HealthcareCentersPage() {
   });
 
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-8 space-y-8 animate-in fade-in duration-150">
+    <div className="healthcare-page max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-8 space-y-8 animate-in fade-in duration-150">
       <div
         role="note"
         style={{
