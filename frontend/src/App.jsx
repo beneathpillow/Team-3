@@ -1,13 +1,13 @@
-// The root component of the webapp, which is displayed by main.jsx.
-// Add your pages and components here.
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Home from "./pages/Home/page";
 
 export default function App() {
   return (
-    <main>
-      <h1>MERN Stack Starter</h1>
-      <p>
-        Edit <code>src/App.jsx</code> to get started.
-      </p>
-    </main>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }

@@ -6,7 +6,6 @@ import { createRoot } from "react-dom/client";
 
 // The global stylesheet, which applies to the whole webapp
 import "./index.css";
-
 import App from "./App.jsx";
 
 // StrictMode enables extra checks during development, to help find common mistakes
